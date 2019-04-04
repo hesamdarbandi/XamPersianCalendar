@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Hesam darbandi</Authors>
+    <NeutralLanguage>ps</NeutralLanguage>
+    <PackageLicenseUrl>https://github.com/hesamaccount/XamarinFormPersianCalendar/blob/master/LICENSE</PackageLicenseUrl>
+    <Owners>hesam darbandi</Owners>
+    <PackageProjectUrl>https://github.com/hesamaccount/XamarinFormPersianCalendar</PackageProjectUrl>
+    <Summary>Persian Calendar Control For Xamarin Forms</Summary>
+    <PackageTags>XamarinForms PersianCalendar XamarinAndroid XamarinIos </PackageTags>
+    <Title>XamPersianCalendar</Title>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>XamPersianCalendar</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Description> Persian calendar control for xamarin forms</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.583944" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+</Project>

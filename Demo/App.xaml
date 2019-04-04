@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Demo.App">
+    <Application.Resources>
+        <ResourceDictionary>
+              
+            <Color x:Key="AccentColor">#BC4C1B</Color>
+            <Color x:Key="SecondAccentColor">#008DD4</Color>
+            <Color x:Key="BackgroundColor">#E8F0F6</Color>
+            <Color x:Key="BlackColor">#000000</Color>
+            <Color x:Key="BlackTextColor">#253748</Color>
+            <Color x:Key="BlueColor">#0072C6</Color>
+            <Color x:Key="GreenColor">#368F94</Color>
+            <Color x:Key="OrangeColor">#BC4C1B</Color>
+            <Color x:Key="LightOrangeColor">#D87E56</Color>
+            <Color x:Key="WhiteColor">#FFFFFF</Color>
+            <Color x:Key="ValidationErrorColor">#FF204F</Color>
+            <Color x:Key="DarkGrayColor">#ADADAD</Color>
+            <Color x:Key="GrayColor">#F6F1E9</Color>
+            <Color x:Key="SelectedDateColor">#48989D</Color>  
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:cl="clr-namespace:XamPersianCalendar;assembly=XamPersianCalendar"
+             xmlns:local="clr-namespace:Demo" x:Class="Demo.MainPage">
+    <StackLayout Margin="0,200,0,0">
+        <cl:Calendar 
+                        x:Name="Calendar"
+                        SelectedDates="{Binding Dates, Mode=TwoWay}"
+                        DatesFontSize="12"
+                        SelectedFontSize="12"
+                        WeekdaysFontSize="12"
+                        TitleLabelFontSize="20"
+                        SelectedBorderWidth="0"
+                        BorderWidth="0"
+                        DisabledFontSize="12"
+                        DisabledBorderWidth="6"
+                        EnableTitleMonthYearView="True"
+                        WeekdaysShow="True"
+                        WeekdaysFontAttributes="Bold"
+                        DisabledBorderColor="{StaticResource WhiteColor}"
+                        DisabledBackgroundColor="{StaticResource WhiteColor}"
+                        BorderColor="{StaticResource WhiteColor}"
+                        DatesBackgroundColor="{StaticResource WhiteColor}"
+                        TitleLeftArrowTextColor="{StaticResource DarkGrayColor}"
+                        TitleRightArrowTextColor="{StaticResource DarkGrayColor}"
+                        SelectedTextColor="{StaticResource SelectedDateColor}"
+                        SelectedBorderColor="{StaticResource WhiteColor}"
+                        DateCommand="{Binding SelectedDateCommand}"
+                        MultiSelectDates="False" 
+                        SelectRange="False"
+                        >
+                        <cl:Calendar.SelectedBackgroundImage>
+                            <OnPlatform x:TypeArguments="FileImageSource">
+                                <On Platform="Android, iOS" Value="ball" />
+                            </OnPlatform>
+                        </cl:Calendar.SelectedBackgroundImage>
+                        <cl:Calendar.SelectedRangeBackgroundImage>
+                            <OnPlatform x:TypeArguments="FileImageSource">
+                                <On Platform="Android, iOS" Value="selected" />
+                            </OnPlatform>
+                        </cl:Calendar.SelectedRangeBackgroundImage>
+                        <cl:Calendar.FirstSelectedBackgroundImage>
+                            <OnPlatform x:TypeArguments="FileImageSource">
+                                <On Platform="Android, iOS" Value="ball_left" />
+                            </OnPlatform>
+                        </cl:Calendar.FirstSelectedBackgroundImage>
+                        <cl:Calendar.LastSelectedBackgroundImage>
+                            <OnPlatform x:TypeArguments="FileImageSource">
+                                <On Platform="Android, iOS" Value="ball_right" />
+                            </OnPlatform>
+                        </cl:Calendar.LastSelectedBackgroundImage>
+                    </cl:Calendar>
+    </StackLayout>
+</ContentPage>
